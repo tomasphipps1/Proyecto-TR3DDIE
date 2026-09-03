@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link de boostrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Fuente Nunito -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <!-- link de CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>TR3DDIE</title>
+
+
+    
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+
+        <div>
+            
+            <a href="#"><img class="imagen-logo" src="images/Logonav.png" alt="Logo del navegador"></a>
+            
+        </div>
+
+
+        <nav>
+            <ul>
+                <li><a href="#">INICIO</a></li>
+                <li><a href="pages/productos.html">PRODUCTOS</a></li>
+                <li><a href="pages/personalizados.html">PERSONALIZADOS</a></li>
+                <li><a href="pages/nosotros.html">¿QUIENES SOMOS?</a></li>
+                <li><a href=""><i class="fa-solid fa-cart-shopping carrito-de-compras"></i></a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- Carrusel de banners -->
+
+        <section>
+
+            <!-- marquesina -->
+
+            <div class="franja-marquesina">
+                <div class="track-marquesina">
+                    <h1>IMPRESIONES 3D | <b>IDEAS QUE TOMAN FORMA</b> | DISEÑOS A MEDIDA</h1>
+                </div>
+            </div>
+
+            <!-- Carrusel de boostrap -->
+
+            <div id="carouselExample" class="carousel slide">
+
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="images/Bannerimage.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="images/bannerimagedos.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="images/Bannerimage.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <i class="fa-solid fa-chevron-left mi-icono-carrusel"></i>
+                    <span class="visually-hidden"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <i class="fa-solid fa-chevron-right mi-icono-carrusel"></i>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </section>
+
+        <!-- Seccion productos destacados -->
+
+        <section class="secciones-main">
+
+            <h2>PRODUCTOS DESTACADOS</h2>
+
+            <!-- Tarjetas de productos -->
+
+            <div class="secciones-tarjetas">
+
+                <div class="secciones-tarjetas-interior">
+
+                    <img class="imagen-tarjetas" src="images/Producto2.png" alt="Imagen de prueba">
+                    <h3>Producto 1</h3>
+                    <p class="tarjetas-precio">$1000</p>
+
+                    <div class="orden-botones-tarjetas">
+
+                            <a class="botones" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                            <a class="botones botones-detalles" href="">DETALLES</a>
+                            
+                    </div>
+
+                </div>
+
+                <div class="secciones-tarjetas-interior">
+                    
+                    <img class="imagen-tarjetas" src="images/Producto2.png" alt="Imagen de prueba">
+                    <h3>Producto 2</h3>
+                    <p class="tarjetas-precio">$1000</p>
+
+                    <div class="orden-botones-tarjetas">
+
+                            <a  class="botones" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                            <a class="botones botones-detalles" href="">DETALLES</a>
+                            
+                    </div>
+                </div>            
+
+                <div class="secciones-tarjetas-interior">
+                    <img class="imagen-tarjetas" src="images/Producto2.png" alt="Imagen de prueba">
+                    <h3>Producto 3</h3>
+                    <p class="tarjetas-precio">$1000</p>
+
+                    <div class="orden-botones-tarjetas">
+
+                            <a  class="botones" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                            <a class="botones botones-detalles" href="">DETALLES</a>
+                            
+                    </div>
+
+                </div>
+                
+                <div class="secciones-tarjetas-interior">
+
+                    <img class="imagen-tarjetas" src="images/Producto2.png" alt="Imagen de prueba">
+                    <h3>Producto 4</h3>
+                    <p class="tarjetas-precio">$1000</p>
+
+                    <div class="orden-botones-tarjetas">
+
+                            <a  class="botones" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                            <a class="botones botones-detalles" href="">DETALLES</a>
+
+                    </div>
+
+                </div>
+
+            
+            
+                <!-- Boton ver mas -->
+
+                <div class="ver-mas">
+                    <a class="boton-ver-mas" href=""><img src="" alt=""><i class="fa-solid fa-circle-chevron-right"></i></a>
+                    <p>VER MAS</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Seccion categorias -->
+
+        <section class="secciones-main secciones-main-categorias">
+
+            <h2>CATEGORIA</h2>
+
+            <div class="secciones-tarjetas">
+                
+                <div class="secciones-tarjetas-interior">
+                    <img class="imagen-tarjetas" src="images/Producto1.png" alt="Imagen de ejemplo">
+                    <h3>Categoria 1</h3>
+                    <a class="botones"  href="">DETALLES</a>
+                </div>
+
+                <div class="secciones-tarjetas-interior">
+                    <img class="imagen-tarjetas" src="images/Producto1.png" alt="Imagen de ejemplo">
+                    <h3>Categoria 2</h3>
+                    <a class="botones"  href="">DETALLES</a>
+                </div>  
+
+                <div class="secciones-tarjetas-interior">
+                    <img class="imagen-tarjetas" src="images/Producto1.png" alt="Imagen de ejemplo">
+                    <h3>Categoria 3</h3>
+                    <a class="botones"  href="">DETALLES</a>
+                </div> 
+
+                <div class="secciones-tarjetas-interior">
+                    
+                    <img class="imagen-tarjetas" src="images/Producto1.png" alt="Imagen de ejemplo">
+                    <h3>Categoria 4</h3>
+                    <a class="botones"  href="">DETALLES</a>
+                </div>
+
+                <!-- Boton ver mas -->
+
+                <div class="ver-mas">
+                    <a class="boton-ver-mas" href=""><img src="" alt=""><i class="fa-solid fa-circle-chevron-right"></i></a>
+                    <p>VER MAS</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Seccion pedidos personalizados -->
+
+        <section class="secciones-main">
+
+            <h2>PEDIDOS PERSONALIZADOS</h2>
+
+            <div class="seccion-personalizados">
+
+                <div class="secciones-tarjetas-personalizados">
+                    <div class="secciones-tarjetas-interior">
+                        <div  class="contenedor-numeros-pasos">
+                            <span class="numeros-pasos" >1</span>
+                            <i class="fa-solid fa-folder-open iconos-personalizado"></i>
+                            <i class="fa-solid fa-lightbulb iconos-personalizado"></i>
+                        </div>
+                        <h4>Enviar tu idea o archivo</h4>
+                        <p><b>Pasanos</b> tu logo, una referencia 
+                            visual, un boceto o directamente 
+                            el archivo 3D (.STL / .OBJ).</p>
+                    </div>
+
+                    <div class="secciones-tarjetas-interior">
+                        <div class="contenedor-numeros-pasos">
+                            <span class="numeros-pasos" >2</span>
+                            <i class="fa-solid fa-paintbrush iconos-personalizado"></i>
+                            <i class="fa-solid fa-tag iconos-personalizado"></i>
+                        </div>
+                        <h4>Cotizacion y color</h4>
+                        <p><b>Definimos</b> las medidas, el material y 
+                            elegimos los colores dentro del catálogo 
+                            disponible para darte tu presupuesto.</p>
+                    </div>
+
+                    <div class="secciones-tarjetas-interior">
+                        <div  class="contenedor-numeros-pasos">
+                            <span class="numeros-pasos">3</span>
+                            <i class="fa-solid fa-box-open iconos-personalizado"></i>
+                        </div>
+                        <h4>Impresion y entrega</h4>
+                        <p><b>Preparamos</b> tus piezas con máxima 
+                        precisión y coordinamos el retiro o envío.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <button class="botones"><a href="">CONTACTANOS</a></button>
+                </div>
+
+            </div>
+
+
+
+
+
+        </section>
+
+    </main>
+
+    <!-- footer -->
+    
+    <footer>
+
+        <ul>
+            <li></li>
+        </ul>
+
+
+        <div class="secciones-footer"> 
+
+            <div class="secciones-footer-columnas">
+
+                <h5>CONTACTOS</h5>
+
+                <ul>
+                    <li>
+                        <a href="https://wa.me/54936244029477" target="_blank"><i class="fa-brands fa-whatsapp"></i> 54936244029477</a>
+                    </li>
+                    <li>
+                        <a href="mailto:contactos.tr3ddie@gmail.com?subject=Consulta%20desde%20la%20web"><i class="fa-regular fa-envelope"></i> contactos.tr3ddie@gmail.com</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="secciones-footer-columnas">
+
+                <h5>REDES SOCIALES</h5>
+
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank"> <i class="fa-brands fa-square-facebook"></i> tr3ddie</a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank" ><i class="fa-brands fa-instagram"></i> tr3ddie</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+
+    </footer>
+
+
+<!-- Script de boostrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+
+</html>

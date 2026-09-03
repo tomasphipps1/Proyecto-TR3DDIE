@@ -1,0 +1,693 @@
+/* Variables de marca */
+
+
+        :root {
+
+            --color-primario: #abe1fa;
+            --color-secundario: #9bd3ae ;
+            --color-terciario: #4f6d5b;
+
+        }
+
+/* reseteo de estilos */
+
+
+        * {
+            /* reseteo de espacios */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+            /* reseteo de fuentes */
+
+            font-family: "Nunito";
+
+            /* reseteo links y listas */
+
+            list-style: none;
+            text-decoration: none;
+            color: inherit;
+
+        }
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+/* estilos del nav */
+
+            header {
+
+                /* Te sigue cuando scrolleas */
+                position: sticky;
+                top: 0;
+                z-index: 1000;
+
+
+                background-color: var(--color-primario);
+
+                padding: 1em 2em 1em 2em;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+            }
+
+            header nav ul {
+
+                display: flex;
+                color: var(--color-terciario);
+
+            }
+
+            header nav ul li a {
+                font-size: 1em;
+                font-weight: 500;
+                padding: 1em;
+
+                display: inline-block;
+                transition: transform 0.3s ease;
+            }
+
+            header nav ul li a:hover {
+                transform: scale(1.1);
+            }
+
+
+
+            .carrito-de-compras {
+                font-size: 1.6em;
+
+                display: inline-block;
+                transition: transform 0.5s ease;
+                
+            }
+
+            .carrito-de-compras:hover {
+                transform: scale(1.1);
+                animation: temblequeoCarrito 0.5s ease-in-out;
+            }
+
+
+            @keyframes temblequeoCarrito {
+                0% { transform: rotate(0deg); }
+                15% { transform: rotate(-12deg); }
+                30% { transform: rotate(12deg); }
+                45% { transform: rotate(-8deg); }
+                60% { transform: rotate(8deg); }
+                75% { transform: rotate(-4deg); }
+                90% { transform: rotate(4deg); }
+                100% { transform: rotate(0deg); }
+            }
+
+
+
+
+            .imagen-logo {
+                width: 70%;
+
+                display: inline-block;
+                transition: transform 0.3s ease;
+            }
+
+            .imagen-logo:hover {
+                transform: scale(1.2);
+            }
+
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+
+
+/* secciones main */
+
+/* banner */
+
+/*         .imagen-banner {
+            display: block;
+            width: 100%;
+        } */
+
+.mi-icono-carrusel {
+    color: white;
+    font-size: 3em;
+}
+
+/* marquesina h1 Inicio*/
+
+        .franja-marquesina {
+        width: 100%;
+        overflow: hidden; /* Corta todo lo que se salga de la pantalla */
+        background-color: white;
+        padding: 1rem;
+        white-space: nowrap; /* Impide que el texto baje a una segunda línea */
+        }
+
+        .franja-marquesina h1 {
+        display: inline-block;
+        font-size: 2rem;
+        font-weight: 600;
+        color: var(--color-secundario);
+        
+        /* Nombre | Duración | Curva de movimiento | Repetición | Dirección */
+        animation: idaYVuelta 8s ease-in-out infinite alternate;
+        }
+
+        @keyframes idaYVuelta {
+        0% {
+            transform: translateX(-100%); /* Sale por la izquierda */
+        }
+        100% {
+            transform: translateX(100vw); /* Sale por la derecha de la pantalla */
+        }
+        }
+
+/* botones */
+
+        .botones {
+            text-align: center;
+            font-size: 1.4em;
+            border-radius: 8pt;
+            padding: 0.5rem;
+            color: var(--color-terciario);
+            background-color: transparent;
+            border: 0.1em solid var(--color-terciario);
+
+            transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease ;
+        }
+
+        .botones:hover {
+            border: 0.1em solid transparent;
+            color: white;
+            background-color: var(--color-terciario);
+        }
+
+        .botones-detalles {
+            padding-left: 2em;
+            padding-right: 2em;
+        }
+
+/* Secciones */
+
+        /* Titulo de secciones */
+
+        h2 {
+            margin-bottom: 1em;
+            font-size: 2em;
+            color: var(--color-terciario);
+        }
+
+        /* Botones de secciones */
+
+        .ver-mas {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+        }
+
+        .ver-mas p {
+            line-height: 1em;
+            font-weight: 900;
+            text-align: center;
+            color: var(--color-terciario);
+            
+        }
+
+        .boton-ver-mas {
+            font-size: 4em;
+            color: var(--color-terciario);
+
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        .boton-ver-mas:hover {
+            transform: scale(1.2);
+        }
+
+
+        /* tarjetas */
+
+        .imagen-tarjetas {
+            width: 100%;
+        }
+
+        .secciones-main {
+            padding: 5em 18em 5em 18em;
+        }
+
+        .secciones-tarjetas {
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            display: flex;
+            gap: 2em;
+
+            flex-wrap: wrap;
+        }
+
+
+        .secciones-main-categorias {
+            background-color: var(--color-primario);
+        }
+
+        .secciones-tarjetas-interior {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8em;
+
+        }
+
+
+
+        /* texto tarjetas */
+
+        h3 {
+            font-weight: 500;
+            font-size: 1.6em;
+            color: var(--color-terciario);
+        }
+
+        .secciones-tarjetas-interior .tarjetas-precio {
+            font-size: 1.6em;
+            font-weight: 700;
+            color: var(--color-terciario);
+        }
+
+
+        .orden-botones-tarjetas {
+            gap: 1em;
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+
+        /* estilos pedidos personalizados */
+
+        .seccion-personalizados {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 3em;
+        }
+
+        .secciones-tarjetas-personalizados {
+            
+            display: flex;
+            gap: 14em;
+        }
+
+        .contenedor-numeros-pasos {
+            display: flex;
+            align-items: end;
+            gap: 1em;
+        }
+
+        .numeros-pasos {
+            text-box-trim: trim-both;
+            text-box-edge: cap alphabetic;
+
+            user-select: none;
+            color: var(--color-terciario);
+            font-weight: 900;
+            font-size: 10em;
+        }
+
+        .iconos-personalizado {
+            color: var(--color-terciario);
+            font-size: 3.8em;
+        }
+
+        h4 {
+            color: var(--color-terciario);
+            font-size: 1.6em;
+        }
+
+        .secciones-tarjetas-interior p {
+            font-size: 1.4em;
+            color: var(--color-terciario);
+        }
+
+
+
+/* estilos footer */
+
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 160px;
+            background-color: var(--color-secundario);
+        }
+
+        footer .secciones-footer {
+            gap: 2em;
+            color: white;
+            display: flex;
+        }
+
+        .secciones-footer-columnas {
+            display: flex;
+            flex-direction: column;
+            gap: 0.3em;
+        }
+
+        h5 {
+            font-weight: 400;
+            font-size: 1em;
+        }
+
+        .secciones-footer-columnas span {
+            font-weight: 600;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        .secciones-footer-columnas a {
+            font-weight: 600;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        .secciones-footer-columnas a:hover {
+            transform: scale(1.1);
+            
+        }
+
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+
+/* estilos quienes somos */
+
+            .seccion-quienes-somos {
+                padding: 10em;
+                display: flex;
+                gap: 6em;
+            }
+
+            .seccion-quienes-somos img {
+                width: 100%;
+            }
+
+            .seccion-quienes-somos div span {
+                font-weight: 900;
+                line-height: 1.1em;
+                color: var(--color-primario);
+                font-size: 9em;
+            }
+
+            .seccion-quienes-somos div p {
+                font-weight: 300;
+                font-size: 1.6em;
+                color: var(--color-terciario);
+            }
+
+            .encabezado-personalizado {
+                padding: 4em;
+                display: grid;
+                
+                grid-template-columns: repeat(12, 1fr);
+                align-items: center;
+            }
+
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+/* Estilos PERSONALIZADOS */
+
+        .titulo-portada-personalizado {
+            grid-column: 1 / 9;
+            grid-row: 1; 
+            z-index: 2; 
+            
+            line-height: 0.8em;
+            color: var(--color-primario);
+            font-weight: 900;
+            font-size: 8vw; /* Usar vw permite que el texto se escale con la pantalla */
+        }
+
+        .encabezado-personalizado img {
+            /* Ocupa desde la columna 6 hasta el final */
+            grid-column: 6 / -1;
+            grid-row: 1;
+            z-index: 1;
+            
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        /* seccion paso */
+
+        .seccion-pasos-contenedor {
+            padding: 10em;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contenedor-pasos {
+            display: flex;
+            flex-direction: column;
+            gap: 4em;
+        }
+
+        .porcion-pasos-contenedor {
+            gap: 6em;
+            display: flex;
+        }
+
+        .porcion-pasos-contenedor span {
+            color: var(--color-terciario);
+            font-size: 6em;
+            font-weight: 800;
+        }
+
+        .porcion-pasos-contenedor p {
+            color: var(--color-terciario);
+            font-size: 1.6em;
+            font-weight: 300;
+        }
+
+        .col-pasos{
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+        }
+
+        .pasos-separados-1,
+        .pasos-separados-2 {
+            display: flex;
+            flex-direction: column;
+            width: 50%; /* Ajustá este porcentaje según qué tan ancho quieras el texto */
+        }
+
+        .pasos-separados-1 {
+            align-self: flex-start;
+        }
+
+    
+        .pasos-separados-2 {
+            align-self: flex-end;
+        }
+
+
+        /* seccion formulario de contacto */
+
+        .seccion-formulario {
+            padding: 10em;
+            padding-top: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .formulario-contacto {
+            display: flex;
+            gap: 2em;
+            flex-direction: column;
+        }
+
+        .formulario-contacto .botones {
+            padding-right: 2em;
+            padding-left: 2em;
+            align-self: center;
+            cursor: pointer;
+
+        }
+
+        .campo-form input,
+        .campo-form textarea {
+            font-weight: 600;
+            width: 100%;
+            background-color: var(--color-primario);
+            border: none;
+            border-radius: 8px;
+            padding: 1rem 1.5rem;
+            font-size: 1.2em;
+            color: var(--color-terciario);
+            outline: none; /* Quita el borde feo por defecto al hacer clic */
+            resize: vertical;
+        }
+
+        .campo-form input::placeholder,
+        .campo-form textarea::placeholder {
+            color: var(--color-terciario);
+            opacity: 1;
+        }
+
+
+/* PAGINA PRODUCTOS */
+    
+        /* Encabezado */
+
+        .contenedor-principal {
+            max-width: 90%;
+            margin: 0 auto;
+            padding: 4em;
+        }
+
+        /* Banner superior */
+        .banner-principal {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-bottom: 3.5em;
+        }
+
+        .banner-titulo {
+            position: absolute;
+            left: 8%;
+            width: 65%;
+            z-index: 10;
+        }
+
+        .banner-titulo h1 {
+            font-size: 7rem;    
+            color: var(--color-secundario);
+            line-height: 0.88;
+            font-weight: 900;
+        }
+
+
+        /* seccion grilla productos */
+
+        /* Encabezado del catálogo (Desplazado para alinearse con la grilla de productos) */
+
+            .encabezado-catalogo {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                margin-bottom: 1.5em;
+                padding-left: 17%; /* Espacio exacto (220px del filtro + 32px de gap) */
+            }
+
+            .encabezado-catalogo h2 {
+                margin: 0;
+            }
+
+            .encabezado-catalogo .subtitulo {
+                color: var(--color-terciario);
+                font-size: 0.9rem;
+            }
+
+            /* Disposición Flexbox (Conecta Filtros y Grilla directamente) */
+            
+                .disposicion-catalogo {
+                display: flex;
+                gap: 4em;
+                align-items: stretch; /* Estira ambos elementos a la misma altura exactamente */
+            }
+
+            /* Barra lateral filtros */
+            .barra-lateral {
+                width: 220px;
+                background-color: var(--color-primario);
+                padding: 1.5em;
+            }
+
+            .barra-lateral h3 {
+                font-weight: 600;
+                margin-bottom: 1em;
+            }
+
+            .barra-lateral ul li {
+                margin-bottom: 0.5em;
+            }
+
+            .barra-lateral a {
+                font-size: 0.9rem;
+                color: var(--color-terciario);
+            }
+
+            .barra-lateral a:hover {
+                font-weight: bold;
+            }
+
+            /* Grilla de productos */
+            .grilla-productos {
+                flex: 1;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 3em;
+            }
+
+            .tarjeta-producto {
+                gap: 0.2em;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .tarjeta-producto h3 {
+                font-size: 1.2rem;
+                margin: 0.2em 0;
+            }
+
+            .tarjeta-producto .precio {
+                font-weight: 700;
+                font-size: 1.1rem;
+                margin-bottom: 0.6em;
+                color: var(--color-terciario);
+            }
+
+            /* Botones de acción */
+
+            .acciones-tarjeta {
+                display: flex;
+                gap: 2em;
+            }
+
+            .boton-carrito,
+            .boton-detalles {
+                border: 0.1em solid var(--color-terciario);
+                background-color: white;
+                color: var(--color-terciario);
+                border-radius: 6px;
+                padding: 0.4em 0.8em;
+                cursor: pointer;
+                font-weight: 700;
+                transition: all 0.2s ease;
+            }
+
+            .boton-carrito:hover,
+            .boton-detalles:hover {
+                background-color: var(--color-terciario);
+                color: white;
+            }
+
+            .boton-detalles {
+                flex: 1;
+                font-size: 0.8rem;
+            }
+
+
+
+                        /* Reseteo de estilos para boostrap */
+
+                            a {
+                                color: inherit;
+                                text-decoration: none;
+                                }   
+
+                            ul { margin: 0;}
