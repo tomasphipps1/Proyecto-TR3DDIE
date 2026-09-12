@@ -175,10 +175,12 @@
 
         .franja-marquesina {
         width: 100%;
+        max-width: 100%;
         overflow: hidden; /* Corta todo lo que se salga de la pantalla */
         background-color: white;
         padding: 1rem;
         white-space: nowrap; /* Impide que el texto baje a una segunda línea */
+        position: relative;
         }
 
         .franja-marquesina h1 {
@@ -189,14 +191,15 @@
         
         /* Nombre | Duración | Curva de movimiento | Repetición | Dirección */
         animation: idaYVuelta 8s ease-in-out infinite alternate;
+        will-change: transform;
         }
 
         @keyframes idaYVuelta {
         0% {
-            transform: translateX(-100%); /* Sale por la izquierda */
+            transform: translateX(0%);
         }
         100% {
-            transform: translateX(100vw); /* Sale por la derecha de la pantalla */
+            transform: translateX(calc(100% - 10px));
         }
         }
 
@@ -785,6 +788,12 @@
         .campo-form textarea::placeholder {
             color: var(--color-terciario);
             opacity: 1;
+        }
+
+        /* personalizados media querys */
+
+        @media (max-width: 480px) {
+            
         }
 
 
