@@ -175,7 +175,7 @@
 
         .franja-marquesina {
         width: 100%;
-        max-width: 100%;
+        max-width: 100vw;
         overflow: hidden; /* Corta todo lo que se salga de la pantalla */
         background-color: white;
         padding: 1rem;
@@ -199,7 +199,7 @@
             transform: translateX(0%);
         }
         100% {
-            transform: translateX(calc(100% - 10px));
+            transform: translateX(100%);
         }
         }
 
