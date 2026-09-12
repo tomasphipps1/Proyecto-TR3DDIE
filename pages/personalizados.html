@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- animaciones -->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- link de CSS -->
     <link rel="stylesheet" href="../css/style.css">
     <!-- Font awesome -->
@@ -23,12 +27,9 @@
 
     <header>
 
-        <div>
-            
-            <a href="../index.html"><img class="imagen-logo" src="../images/Logonav.png" alt="Logo del navegador"></a>
-            
-        </div>
-
+        <a class="link-imagen" href="#">
+            <img src="../images/Logonav.png" alt="Logo del navegador">
+        </a>
 
         <nav>
             <ul>
@@ -57,7 +58,7 @@
 
             <div class="contenedor-pasos">
 
-                <div class="porcion-pasos-contenedor">
+                <div data-aos="fade-right" class="porcion-pasos-contenedor">
 
                     <img src="../images/pasospersonalizados.png" alt="">
 
@@ -136,7 +137,7 @@
 
         <!-- formulario de contacto -->
 
-        <section class="seccion-formulario">
+        <section id="formulario-contacto" class="seccion-formulario">
 
             <h2>MANDANOS UN MENSAJE O CONSULTA</h2>
 
@@ -203,6 +204,14 @@
 
 
     </footer>
+
+<!-- animaciones -->
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
     
 </body>
 </html>

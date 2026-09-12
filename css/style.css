@@ -52,7 +52,7 @@
             }
 
             header nav ul {
-
+                padding: 0;
                 display: flex;
                 color: var(--color-terciario);
 
@@ -98,18 +98,56 @@
                 100% { transform: rotate(0deg); }
             }
 
-
-
-
-            .imagen-logo {
-                width: 70%;
-
+            .link-imagen {
+                width: 120px;
                 display: inline-block;
+            }
+
+
+
+            .link-imagen img {
+                width: 100%;
+
+                display: block;
                 transition: transform 0.3s ease;
             }
 
-            .imagen-logo:hover {
+            .link-imagen img:hover {
                 transform: scale(1.2);
+            }
+
+
+            /* media queris nav */
+
+            @media (max-width: 480px) {
+
+                header {
+                    position: relative;
+                    gap: 0.4em;
+                    padding: 1em;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                header nav ul {
+                
+                flex-direction: column;
+                align-items: center;
+
+                }
+
+                header nav ul li a {
+                font-size: 0.9em;
+                font-weight: 500;
+                padding: 0.4em;
+
+                
+                }
+
+                .link-imagen {
+                width: 80px;
+                display: inline-block;
+            }
             }
 
 
@@ -162,6 +200,24 @@
         }
         }
 
+
+            /* media queris marquesina y banner */
+
+            @media (max-width: 480px) {
+                .franja-marquesina {
+                    padding: 0.5em;
+                }
+
+                .franja-marquesina h1 {
+                    font-size: 1em;
+                }
+
+                .mi-icono-carrusel {
+                    
+                    font-size: 2em;
+                }
+            }
+
 /* botones */
 
         .botones {
@@ -186,6 +242,16 @@
             padding-left: 2em;
             padding-right: 2em;
         }
+
+
+        /* madia query botones */
+
+        @media (max-width: 480px) {
+            .botones {
+                font-size: 1.2em;
+            }
+        }
+
 
 /* Secciones */
 
@@ -264,12 +330,14 @@
         /* texto tarjetas */
 
         h3 {
+            margin: 0;
             font-weight: 500;
             font-size: 1.6em;
             color: var(--color-terciario);
         }
 
         .secciones-tarjetas-interior .tarjetas-precio {
+            margin: 0;
             font-size: 1.6em;
             font-weight: 700;
             color: var(--color-terciario);
@@ -281,6 +349,76 @@
             flex-wrap: wrap;
             display: flex;
             justify-content: space-between;
+        }
+
+
+        /* media querys de secciones */
+
+        @media (max-width: 480px) {
+
+            main {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
+            }
+
+            .secciones-main {
+            flex-direction: column;
+            
+            padding: 2em;
+
+            }
+
+            h2 {
+                text-align: center;
+                font-size: 1.5em;
+            }
+
+            .secciones-tarjetas {
+                justify-content: center;
+            }
+
+
+            h3 {
+                font-size: 1.3em;
+            }
+
+            .secciones-tarjetas-interior .tarjetas-precio {
+                font-size: 1.4;
+
+            }
+
+            .orden-botones-tarjetas {
+                justify-content: left;
+            }
+
+            /* boton ver mas celular */
+
+            .ver-mas {
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 0.5em;
+            
+            }
+
+            .ver-mas p {
+                margin: 0;
+                font-size: 1.6em;
+            }
+
+            .boton-ver-mas {
+            
+            font-size: 2em;
+            }
+
+
+
+
+
+
         }
 
 
@@ -332,6 +470,52 @@
         }
 
 
+        /* personalizados media querys */
+
+
+        @media (max-width: 480px) {
+
+            .seccion-personalizados {
+                gap: 0;
+            }
+            .secciones-tarjetas-personalizados {
+                padding: 1em;
+                flex-direction: column;
+                gap: 1em;
+            }
+
+            .contenedor-numeros-pasos {
+
+            margin-bottom: 1em;
+
+            }
+
+            .numeros-pasos {
+
+            font-size: 6em;
+
+            }
+
+            .iconos-personalizado {
+            color: var(--color-terciario);
+            font-size: 2.5em;
+            
+            }
+
+            h4 {
+            font-size: 1.4em;
+            margin: 0;
+            }
+
+            .secciones-tarjetas-interior p {
+            font-size: 1.2em;
+            color: var(--color-terciario);
+            }
+
+
+        }
+
+
 
 /* estilos footer */
 
@@ -341,6 +525,10 @@
             align-items: center;
             height: 160px;
             background-color: var(--color-secundario);
+        }
+
+        footer ul {
+            padding: 0;
         }
 
         footer .secciones-footer {
@@ -360,13 +548,7 @@
             font-size: 1em;
         }
 
-        .secciones-footer-columnas span {
-            font-weight: 600;
-            display: inline-block;
-            transition: transform 0.3s ease;
-        }
-
-        .secciones-footer-columnas a {
+        .secciones-footer-columnas a, .secciones-footer-columnas span {
             font-weight: 600;
             display: inline-block;
             transition: transform 0.3s ease;
@@ -375,6 +557,41 @@
         .secciones-footer-columnas a:hover {
             transform: scale(1.1);
             
+        }
+
+        /* media queris footer */
+
+        @media (max-width: 480px) {
+
+            footer {
+                height: 200px;
+            }
+
+            footer .secciones-footer {
+            gap: 1em;
+            flex-direction: column;
+            }
+
+
+            .secciones-footer-columnas {
+
+            align-items: center;
+
+            }
+
+            h5 {
+                margin: 0;
+                font-size: 0.9em;
+            }
+
+            .secciones-footer-columnas ul {
+                font-weight: 800;
+                font-size: 0.9em;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
         }
 
 
@@ -406,18 +623,50 @@
                 color: var(--color-terciario);
             }
 
-            .encabezado-personalizado {
-                padding: 4em;
-                display: grid;
-                
-                grid-template-columns: repeat(12, 1fr);
-                align-items: center;
+            /* media querys quienes somos */
+
+                @media (max-width: 480px) {
+
+
+                .seccion-quienes-somos {
+                    padding: 2em;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 2em;
+                }
+
+                .seccion-quienes-somos img {
+                width: 100%;
+                }
+
+                .seccion-quienes-somos div span {
+                font-size: 5em;
+                }
+
+                .seccion-quienes-somos div p {
+                font-weight: 300;
+                font-size: 1.4em;
+                color: var(--color-terciario);
+                }
+
+
             }
+            
 
 
 /* ------------------------------------------------------------------------------------------------------------------- */
 
 /* Estilos PERSONALIZADOS */
+
+        .encabezado-personalizado {
+            padding-top: 3em;
+            display: grid;
+            
+            grid-template-columns: repeat(12, 1fr);
+            align-items: center;
+            padding-left: 10em;
+            padding-right: 10em;
+        }
 
         .titulo-portada-personalizado {
             grid-column: 1 / 9;
@@ -444,7 +693,7 @@
         /* seccion paso */
 
         .seccion-pasos-contenedor {
-            padding: 10em;
+            padding: 5em 10em 5em 10em;
             display: flex;
             flex-direction: column;
         }
@@ -540,6 +789,8 @@
 
 
 /* PAGINA PRODUCTOS */
+
+
     
         /* Encabezado */
 
@@ -596,10 +847,10 @@
 
             /* Disposición Flexbox (Conecta Filtros y Grilla directamente) */
             
-                .disposicion-catalogo {
-                display: flex;
-                gap: 4em;
-                align-items: stretch; /* Estira ambos elementos a la misma altura exactamente */
+            .disposicion-catalogo {
+            display: flex;
+            gap: 4em;
+            align-items: stretch; /* Estira ambos elementos a la misma altura exactamente */
             }
 
             /* Barra lateral filtros */
@@ -682,6 +933,95 @@
                 flex: 1;
                 font-size: 0.8rem;
             }
+
+
+                /* media querys preductos */
+
+                @media (max-width: 480px) {
+
+                    
+                    .contenedor-principal {
+                        max-width: 100%;
+                        margin: 2em 0; 
+                        padding: 0;
+                    }
+
+                    .banner-principal {
+                        flex-direction: column;
+                        align-items: center;
+                        width: 100%;
+                        margin-bottom: 1em;
+                    }
+
+                    
+                    .banner-principal img {
+                        width: 100%;
+                        position: relative;
+
+                    }
+
+                    
+                    .banner-titulo {
+                        position: relative;
+                        left: 0;
+                        width: 100%;
+                        text-align: start; 
+                        padding: 0 3rem;  
+                    }
+
+                    .banner-titulo h1 {
+                        font-size: 2.5rem;
+                        line-height: 1;
+                        margin-bottom: 0.4em;
+                    }
+                
+
+
+
+
+                    .encabezado-catalogo {
+                        flex-direction: column;
+                        padding: 0;
+                        align-items: flex-start;
+                        margin-bottom: 1em;
+
+
+                    }
+
+
+
+                    .disposicion-catalogo {
+                        gap: 1em;
+                        flex-direction: column;
+
+                    }
+
+                    .grilla-productos {
+                        
+                        gap: 1em;
+                        display: flex;
+                        flex-direction: column;
+
+                    }
+
+                    .tarjeta-producto {
+                        gap: 0;
+                    }
+
+                    .barra-lateral {
+                        width: 100%;
+                        padding: 1em;
+                    }
+
+                    .barra-lateral ul li {
+                        margin-bottom: 0.1em;
+                    }
+
+                    .barra-lateral h3 {
+                        margin-bottom: 0.1em;
+                    }
+
+                }
 
 
 
